@@ -6,12 +6,7 @@
 // make use of this function.
 
 const countBs = word => {
-    let bCount = 0;
-    for(let i = 0; i < word.length; i++) {
-        if(word[i] === "B") {
-            bCount++;
-        }
-    }
+    let bCount = countChar(word, "B");
     return bCount;
 }
 
@@ -25,7 +20,7 @@ const countChar = (word, countChar) => {
     return counted;
 }
 
-let a = "How many Big BeBauBtiful BeeHives are here?";
+let a = "How maBny Big BeBauBtiful BeeHives are here?";
 
 console.log(countBs(a))
 console.log(countChar(a, "B"));
