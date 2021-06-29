@@ -17,4 +17,4 @@ const isEven = num => {
     }
 }
 
-console.log(isEven(-2));
+console.log(isEven(-4));
